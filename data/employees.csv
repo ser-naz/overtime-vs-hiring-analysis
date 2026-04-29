@@ -1,0 +1,16 @@
+employee_id,first_name,last_name,role,hourly_rate,ot_eligible
+1,John,Apple,junior,20.0,True
+2,Mike,Banana,junior,20.0,True
+3,Alex,Orange,junior,20.0,True
+4,Chris,Mango,junior,20.0,True
+5,David,Peach,junior,20.0,True
+6,James,Cherry,junior,20.0,True
+7,Robert,Grape,junior,20.0,True
+8,Daniel,Lemon,junior,20.0,True
+9,Mark,Pear,junior,20.0,True
+10,Paul,Plum,junior,20.0,True
+11,Kevin,Kiwi,junior,20.0,True
+12,Steven,Pineapple,senior,25.0,False
+13,Brian,Watermelon,senior,25.0,False
+14,Edward,Strawberry,senior,25.0,False
+15,George,Blueberry,senior,25.0,False

@@ -1,0 +1,10 @@
+scenario_id,scenario_name,required_hours_per_week,overtime_hours,regular_hours,regular_wages,ot_wages,total_wages_ot,overtime_total_cost,paid_hours_hiring,total_wages_hiring,hiring_total_cost,cost_difference,decision
+1,Baseline,440,0,440,8800.0,0.0,8800.0,9592.0,480,9600.0,10604.0,1012.0,No action
+2,Increase +5,445,5,440,8800.0,150.0,8950.0,9755.5,480,9600.0,10604.0,848.5,Overtime
+3,Increase +10,450,10,440,8800.0,300.0,9100.0,9919.0,480,9600.0,10604.0,685.0,Overtime
+4,Increase +15,455,15,440,8800.0,450.0,9250.0,10082.5,480,9600.0,10604.0,521.5,Overtime
+5,Increase +20,460,20,440,8800.0,600.0,9400.0,10246.0,480,9600.0,10604.0,358.0,Overtime
+6,Increase +25,465,25,440,8800.0,750.0,9550.0,10409.5,480,9600.0,10604.0,194.5,Overtime
+7,Increase +30,470,30,440,8800.0,900.0,9700.0,10573.0,480,9600.0,10604.0,31.0,Overtime
+8,Increase +35,475,35,440,8800.0,1050.0,9850.0,10736.5,480,9600.0,10604.0,-132.5,Hire
+9,Increase +40,480,40,440,8800.0,1200.0,10000.0,10900.0,480,9600.0,10604.0,-296.0,Hire
