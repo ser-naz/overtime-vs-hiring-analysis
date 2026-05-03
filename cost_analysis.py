@@ -2,6 +2,9 @@ import pandas as pd
 from sqlalchemy import create_engine
 import urllib.parse
 
+# Import plotting function from visualization module
+from visualization import plot_costs
+
 pd.set_option("display.width", 1000)
 pd.set_option("display.max_columns", None)
 
@@ -247,3 +250,13 @@ print(f"Overtime is cheaper below {break_even_ot_hours:.2f} OT hours per week, h
 # 7            8  Increase +35                      475              35            440         8800.0    1050.0          9850.0              10736.5                480              9600.0            10604.0           -132.5       Hire
 # 8            9  Increase +40                      480              40            440         8800.0    1200.0         10000.0              10900.0                480              9600.0            10604.0           -296.0       Hire
 # Overtime is cheaper below 30.95 OT hours per week, hiring is cheaper above it.
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Call the visualization function using the prepared inputs:
+# - df_scenarios: contains workload levels and calculated costs for both strategies
+# - break_even_ot_hours: analytical result showing the OT threshold where hiring becomes cheaper
+# - regular_capacity: baseline capacity (e.g., 440 hours), used to convert OT hours into total workload
+#
+# it shows how costs behave and where the strategy should change.
+plot_costs(df_scenarios, break_even_ot_hours, regular_capacity)
