@@ -2,52 +2,47 @@
 
 ## Overview
 
-This project compares the cost of paying overtime versus hiring one full-time employee when workload increases.
+Compares overtime labor costs against hiring an additional full-time employee to identify the cost break-even point.
 
 This model reflects a common workforce planning decision in payroll-heavy operations.
 
----
+## Visualization
+
+![Cost Comparison](visualization_output/cost_comparison.png)
 
 ## Key Assumptions
 
 - 40-hour workweek  
-- Overtime paid at 1.5×  
+- Overtime paid at 1.5x  
 - Employer tax: 9%  
 - Health insurance: fixed weekly cost  
-- Only junior employees work overtime  
-- Hiring adds one full-time employee (40 hours)  
-- Hiring assumes no overtime (all employees work fixed 40-hour schedules)
-
----
+- Overtime applies to a subset of employees (e.g., junior staff)  
+- Hiring adds one full-time employee (40 hours/week)  
+- Hiring assumes no overtime (all employees work fixed schedules)  
 
 ## Approach
 
-- Calculate overtime hours for each workload level  
-- Compare total cost:
-  - Overtime scenario  
-  - Hiring scenario  
-- Identify break-even point  
+- Model total labor cost under two scenarios:
+  1. Continue with overtime
+  2. Hire an additional employee
 
----
+- Costs include:
+  - Base wages  
+  - Overtime pay  
+  - Employer taxes  
+  - Benefits (fixed costs)
 
-## Result
+- Simulate different workload levels by increasing overtime hours
 
-Break-even ≈ **31 overtime hours per week**
+## Output
 
-- Below 31 → Overtime is cheaper  
-- Above 31 → Hiring is cheaper  
+- Total labor cost under overtime vs hiring scenarios  
+- Break-even point where hiring becomes more cost-effective  
+- Visualization comparing both cost curves  
 
----
+## Tech Stack
 
-## Visualization
-
-The chart below shows how total cost changes with workload and where the decision shifts from overtime to hiring.
-
-![Cost Comparison](visualization_output/cost_comparison.png)
-
----
-
-## Data
-
-Data is stored in PostgreSQL.  
-CSV files are included in `/data` for reference.
+- Python  
+- pandas  
+- matplotlib  
+- PostgreSQL  
